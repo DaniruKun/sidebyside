@@ -1,14 +1,20 @@
-# sidebyside
+= SideBySide
 
-A Clojure library designed to ... well, that part is up to you.
+image::doc/demo-out.png[]
+.Demo output image join.
 
-## Usage
+A simple CLI tool in Clojure for joining together images side by side.
 
-FIXME
+== Usage
 
-## License
+[source,bash]
+----
+sidebyside left.png right.png out.png
+----
 
-Copyright © 2020 FIXME
+== License
+
+Copyright © 2020 Daniils Petrovs
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
