@@ -7,9 +7,18 @@ A simple CLI tool in Clojure for joining together images side by side.
 
 == Usage
 
+Build uberjar with `lein`
+
 [source,bash]
 ----
-sidebyside left.png right.png out.png
+lein uberjar
+----
+
+Run with java
+
+[source,bash]
+----
+java -jar sidebyside-0.2.0-SNAPSHOT-standalone.jar left.png right.png out.png
 ----
 
 == License
