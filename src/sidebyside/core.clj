@@ -37,7 +37,6 @@
 (defn -main
   [& args]
   (let [left (first args)
-        right (first (rest args))
-        out-img (first (rest (rest args)))]
-    (util/save (image-join left right) out-img))
-  )
+        right (nth args 1)
+        out-img (nth args 2)]
+    (util/save (image-join left right) out-img)))

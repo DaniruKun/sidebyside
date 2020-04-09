@@ -1,7 +1,15 @@
 (ns sidebyside.core-test
   (:require [clojure.test :refer :all]
-            [sidebyside.core :refer :all]))
+            [sidebyside.core :refer :all])
+  (:require [fivetonine.collage.core :refer :all])
+  (:require [fivetonine.collage.util :as util])
+  (:import java.awt.image.BufferedImage))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(deftest test-square-crop
+  (testing "Image is square cropped."
+    (let [test-out-img (square-crop "doc/demo-l.png")
+          w (.getWidth test-out-img)
+          h (.getHeight test-out-img)]
+      (is (= w h))
+      )
+    ))
