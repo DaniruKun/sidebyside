@@ -1,3 +1,5 @@
+image:https://github.com/DaniruKun/sidebyside/workflows/Clojure%20CI/badge.svg?style=svg["Github ci", link="https://github.com/DaniruKun/sidebyside"]
+
 = SideBySide
 
 image::doc/demo-out.png[]
